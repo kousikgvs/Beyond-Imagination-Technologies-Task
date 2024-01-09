@@ -3,11 +3,11 @@ import './Login.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-import { useData } from '../DataContext'; 
+import { useData } from '../DataContext';  
 
 const Login = () => {
   const navigate = useNavigate();
-  const { loginUser } = useData();
+  const { updateData } = useData(); 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -16,8 +16,8 @@ const Login = () => {
     if (username === 'username' && password === 'password') {
       toast.success('Logged in successfully!');
       const userData = { username, password };
-      navigate("/dashboard")
-      loginUser(userData);
+      updateData(userData); 
+      navigate("/dashboard");
     } else {
       toast.error('Invalid username or password!');
     }

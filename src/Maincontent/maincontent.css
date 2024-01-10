@@ -1,0 +1,29 @@
+.main-content{
+    height: 100%;
+    margin: 20px;
+    width: 100%;
+    background-color: rgb(41, 37, 37);
+}
+
+.partition1{
+    padding: 10px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partition2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.partition1-div3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}

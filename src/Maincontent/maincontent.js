@@ -31,9 +31,10 @@ const maincontent = () => {
                     </div>
                     <PieGraphEmployment />
                     <div className='partition1-div3'>
-                        <p>Total Users=1024</p>
-                        <p>Male=768</p>
-                        <p>Female=256</p>
+                        <p>Total Users = 1024</p>
+                        <p>FULL TIME = 205</p>
+                        <p>PART TIME = 317</p>
+                        <p>DAILY WAGE = 502</p>
                     </div>
                 </div>
             </div>

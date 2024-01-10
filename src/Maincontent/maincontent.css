@@ -27,3 +27,17 @@
     gap: 20px;
     align-items: center;
 }
+
+@media screen and (max-width: 400px) {
+    .partition2{
+        flex-direction: column;
+    }
+    .main-content{
+        height: fit-content;
+        margin: 20px;
+        width: 100%;
+        background-color: rgb(41, 37, 37);
+    }
+
+    
+  }

@@ -10,8 +10,8 @@ const Dashboard = () => {
     <div className='dashbaord'>
     <ResponsiveTopNav />
     <div className='dashboard-body'>
-      <Sidebar />
-      <Maincontent />
+    <Sidebar />
+      <Maincontent /> 
     </div>
     </div>
   )

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import "./NavBar.css"
-import { useData } from '../DataContext'; 
+import { useData } from '../DataContext';
+import { useNavigate } from 'react-router-dom'; 
 
 function ResponsiveTopNav() {
   const { data } = useData();
   const [isResponsive, setIsResponsive] = useState(false);
-
+const navigate = useNavigate();
   const handleToggle = () => {
     setIsResponsive(prevState => !prevState);
   };
@@ -15,7 +16,7 @@ function ResponsiveTopNav() {
       <a className="active">Logo Here</a>
       <div className='user-credentials'>
         <div className='username'>{data ? data.username : <>Username</>}</div>
-        <button className='logout'>LOGOUT</button>
+        <button className='logout' onClick={() => navigate("/")}>LOGOUT</button>
       </div>
       {isResponsive && (
         <a onClick={handleToggle}>
